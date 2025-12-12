@@ -1,0 +1,402 @@
+[
+  {
+    "id": "article-1",
+    "title": "Sample News Title 1",
+    "url": "https://example.com/article-1",
+    "content": "This is the body of sample news article number 1. It discusses topic science and includes details for testing the RAG pipeline. Article id 1.",
+    "published_at": "2025-12-02T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-2",
+    "title": "Sample News Title 2",
+    "url": "https://example.com/article-2",
+    "content": "This is the body of sample news article number 2. It discusses topic science and includes details for testing the RAG pipeline. Article id 2.",
+    "published_at": "2025-12-03T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-3",
+    "title": "Sample News Title 3",
+    "url": "https://example.com/article-3",
+    "content": "This is the body of sample news article number 3. It discusses topic sports and includes details for testing the RAG pipeline. Article id 3.",
+    "published_at": "2025-12-04T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-4",
+    "title": "Sample News Title 4",
+    "url": "https://example.com/article-4",
+    "content": "This is the body of sample news article number 4. It discusses topic politics and includes details for testing the RAG pipeline. Article id 4.",
+    "published_at": "2025-12-05T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-5",
+    "title": "Sample News Title 5",
+    "url": "https://example.com/article-5",
+    "content": "This is the body of sample news article number 5. It discusses topic sports and includes details for testing the RAG pipeline. Article id 5.",
+    "published_at": "2025-12-06T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-6",
+    "title": "Sample News Title 6",
+    "url": "https://example.com/article-6",
+    "content": "This is the body of sample news article number 6. It discusses topic health and includes details for testing the RAG pipeline. Article id 6.",
+    "published_at": "2025-12-07T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-7",
+    "title": "Sample News Title 7",
+    "url": "https://example.com/article-7",
+    "content": "This is the body of sample news article number 7. It discusses topic science and includes details for testing the RAG pipeline. Article id 7.",
+    "published_at": "2025-12-08T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-8",
+    "title": "Sample News Title 8",
+    "url": "https://example.com/article-8",
+    "content": "This is the body of sample news article number 8. It discusses topic tech and includes details for testing the RAG pipeline. Article id 8.",
+    "published_at": "2025-12-09T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-9",
+    "title": "Sample News Title 9",
+    "url": "https://example.com/article-9",
+    "content": "This is the body of sample news article number 9. It discusses topic tech and includes details for testing the RAG pipeline. Article id 9.",
+    "published_at": "2025-12-10T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-10",
+    "title": "Sample News Title 10",
+    "url": "https://example.com/article-10",
+    "content": "This is the body of sample news article number 10. It discusses topic health and includes details for testing the RAG pipeline. Article id 10.",
+    "published_at": "2025-12-11T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-11",
+    "title": "Sample News Title 11",
+    "url": "https://example.com/article-11",
+    "content": "This is the body of sample news article number 11. It discusses topic politics and includes details for testing the RAG pipeline. Article id 11.",
+    "published_at": "2025-12-12T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-12",
+    "title": "Sample News Title 12",
+    "url": "https://example.com/article-12",
+    "content": "This is the body of sample news article number 12. It discusses topic tech and includes details for testing the RAG pipeline. Article id 12.",
+    "published_at": "2025-12-13T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-13",
+    "title": "Sample News Title 13",
+    "url": "https://example.com/article-13",
+    "content": "This is the body of sample news article number 13. It discusses topic sports and includes details for testing the RAG pipeline. Article id 13.",
+    "published_at": "2025-12-14T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-14",
+    "title": "Sample News Title 14",
+    "url": "https://example.com/article-14",
+    "content": "This is the body of sample news article number 14. It discusses topic tech and includes details for testing the RAG pipeline. Article id 14.",
+    "published_at": "2025-12-15T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-15",
+    "title": "Sample News Title 15",
+    "url": "https://example.com/article-15",
+    "content": "This is the body of sample news article number 15. It discusses topic tech and includes details for testing the RAG pipeline. Article id 15.",
+    "published_at": "2025-12-16T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-16",
+    "title": "Sample News Title 16",
+    "url": "https://example.com/article-16",
+    "content": "This is the body of sample news article number 16. It discusses topic economy and includes details for testing the RAG pipeline. Article id 16.",
+    "published_at": "2025-12-17T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-17",
+    "title": "Sample News Title 17",
+    "url": "https://example.com/article-17",
+    "content": "This is the body of sample news article number 17. It discusses topic health and includes details for testing the RAG pipeline. Article id 17.",
+    "published_at": "2025-12-18T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-18",
+    "title": "Sample News Title 18",
+    "url": "https://example.com/article-18",
+    "content": "This is the body of sample news article number 18. It discusses topic science and includes details for testing the RAG pipeline. Article id 18.",
+    "published_at": "2025-12-19T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-19",
+    "title": "Sample News Title 19",
+    "url": "https://example.com/article-19",
+    "content": "This is the body of sample news article number 19. It discusses topic economy and includes details for testing the RAG pipeline. Article id 19.",
+    "published_at": "2025-12-20T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-20",
+    "title": "Sample News Title 20",
+    "url": "https://example.com/article-20",
+    "content": "This is the body of sample news article number 20. It discusses topic politics and includes details for testing the RAG pipeline. Article id 20.",
+    "published_at": "2025-12-21T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-21",
+    "title": "Sample News Title 21",
+    "url": "https://example.com/article-21",
+    "content": "This is the body of sample news article number 21. It discusses topic science and includes details for testing the RAG pipeline. Article id 21.",
+    "published_at": "2025-12-22T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-22",
+    "title": "Sample News Title 22",
+    "url": "https://example.com/article-22",
+    "content": "This is the body of sample news article number 22. It discusses topic economy and includes details for testing the RAG pipeline. Article id 22.",
+    "published_at": "2025-12-23T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-23",
+    "title": "Sample News Title 23",
+    "url": "https://example.com/article-23",
+    "content": "This is the body of sample news article number 23. It discusses topic sports and includes details for testing the RAG pipeline. Article id 23.",
+    "published_at": "2025-12-24T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-24",
+    "title": "Sample News Title 24",
+    "url": "https://example.com/article-24",
+    "content": "This is the body of sample news article number 24. It discusses topic sports and includes details for testing the RAG pipeline. Article id 24.",
+    "published_at": "2025-12-25T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-25",
+    "title": "Sample News Title 25",
+    "url": "https://example.com/article-25",
+    "content": "This is the body of sample news article number 25. It discusses topic tech and includes details for testing the RAG pipeline. Article id 25.",
+    "published_at": "2025-12-26T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-26",
+    "title": "Sample News Title 26",
+    "url": "https://example.com/article-26",
+    "content": "This is the body of sample news article number 26. It discusses topic health and includes details for testing the RAG pipeline. Article id 26.",
+    "published_at": "2025-12-27T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-27",
+    "title": "Sample News Title 27",
+    "url": "https://example.com/article-27",
+    "content": "This is the body of sample news article number 27. It discusses topic economy and includes details for testing the RAG pipeline. Article id 27.",
+    "published_at": "2025-12-28T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-28",
+    "title": "Sample News Title 28",
+    "url": "https://example.com/article-28",
+    "content": "This is the body of sample news article number 28. It discusses topic science and includes details for testing the RAG pipeline. Article id 28.",
+    "published_at": "2025-12-01T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-29",
+    "title": "Sample News Title 29",
+    "url": "https://example.com/article-29",
+    "content": "This is the body of sample news article number 29. It discusses topic politics and includes details for testing the RAG pipeline. Article id 29.",
+    "published_at": "2025-12-02T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-30",
+    "title": "Sample News Title 30",
+    "url": "https://example.com/article-30",
+    "content": "This is the body of sample news article number 30. It discusses topic health and includes details for testing the RAG pipeline. Article id 30.",
+    "published_at": "2025-12-03T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-31",
+    "title": "Sample News Title 31",
+    "url": "https://example.com/article-31",
+    "content": "This is the body of sample news article number 31. It discusses topic politics and includes details for testing the RAG pipeline. Article id 31.",
+    "published_at": "2025-12-04T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-32",
+    "title": "Sample News Title 32",
+    "url": "https://example.com/article-32",
+    "content": "This is the body of sample news article number 32. It discusses topic science and includes details for testing the RAG pipeline. Article id 32.",
+    "published_at": "2025-12-05T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-33",
+    "title": "Sample News Title 33",
+    "url": "https://example.com/article-33",
+    "content": "This is the body of sample news article number 33. It discusses topic politics and includes details for testing the RAG pipeline. Article id 33.",
+    "published_at": "2025-12-06T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-34",
+    "title": "Sample News Title 34",
+    "url": "https://example.com/article-34",
+    "content": "This is the body of sample news article number 34. It discusses topic science and includes details for testing the RAG pipeline. Article id 34.",
+    "published_at": "2025-12-07T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-35",
+    "title": "Sample News Title 35",
+    "url": "https://example.com/article-35",
+    "content": "This is the body of sample news article number 35. It discusses topic sports and includes details for testing the RAG pipeline. Article id 35.",
+    "published_at": "2025-12-08T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-36",
+    "title": "Sample News Title 36",
+    "url": "https://example.com/article-36",
+    "content": "This is the body of sample news article number 36. It discusses topic politics and includes details for testing the RAG pipeline. Article id 36.",
+    "published_at": "2025-12-09T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-37",
+    "title": "Sample News Title 37",
+    "url": "https://example.com/article-37",
+    "content": "This is the body of sample news article number 37. It discusses topic sports and includes details for testing the RAG pipeline. Article id 37.",
+    "published_at": "2025-12-10T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-38",
+    "title": "Sample News Title 38",
+    "url": "https://example.com/article-38",
+    "content": "This is the body of sample news article number 38. It discusses topic sports and includes details for testing the RAG pipeline. Article id 38.",
+    "published_at": "2025-12-11T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-39",
+    "title": "Sample News Title 39",
+    "url": "https://example.com/article-39",
+    "content": "This is the body of sample news article number 39. It discusses topic health and includes details for testing the RAG pipeline. Article id 39.",
+    "published_at": "2025-12-12T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-40",
+    "title": "Sample News Title 40",
+    "url": "https://example.com/article-40",
+    "content": "This is the body of sample news article number 40. It discusses topic politics and includes details for testing the RAG pipeline. Article id 40.",
+    "published_at": "2025-12-13T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-41",
+    "title": "Sample News Title 41",
+    "url": "https://example.com/article-41",
+    "content": "This is the body of sample news article number 41. It discusses topic tech and includes details for testing the RAG pipeline. Article id 41.",
+    "published_at": "2025-12-14T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-42",
+    "title": "Sample News Title 42",
+    "url": "https://example.com/article-42",
+    "content": "This is the body of sample news article number 42. It discusses topic economy and includes details for testing the RAG pipeline. Article id 42.",
+    "published_at": "2025-12-15T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-43",
+    "title": "Sample News Title 43",
+    "url": "https://example.com/article-43",
+    "content": "This is the body of sample news article number 43. It discusses topic health and includes details for testing the RAG pipeline. Article id 43.",
+    "published_at": "2025-12-16T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-44",
+    "title": "Sample News Title 44",
+    "url": "https://example.com/article-44",
+    "content": "This is the body of sample news article number 44. It discusses topic sports and includes details for testing the RAG pipeline. Article id 44.",
+    "published_at": "2025-12-17T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-45",
+    "title": "Sample News Title 45",
+    "url": "https://example.com/article-45",
+    "content": "This is the body of sample news article number 45. It discusses topic health and includes details for testing the RAG pipeline. Article id 45.",
+    "published_at": "2025-12-18T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-46",
+    "title": "Sample News Title 46",
+    "url": "https://example.com/article-46",
+    "content": "This is the body of sample news article number 46. It discusses topic science and includes details for testing the RAG pipeline. Article id 46.",
+    "published_at": "2025-12-19T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-47",
+    "title": "Sample News Title 47",
+    "url": "https://example.com/article-47",
+    "content": "This is the body of sample news article number 47. It discusses topic sports and includes details for testing the RAG pipeline. Article id 47.",
+    "published_at": "2025-12-20T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-48",
+    "title": "Sample News Title 48",
+    "url": "https://example.com/article-48",
+    "content": "This is the body of sample news article number 48. It discusses topic health and includes details for testing the RAG pipeline. Article id 48.",
+    "published_at": "2025-12-21T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-49",
+    "title": "Sample News Title 49",
+    "url": "https://example.com/article-49",
+    "content": "This is the body of sample news article number 49. It discusses topic economy and includes details for testing the RAG pipeline. Article id 49.",
+    "published_at": "2025-12-22T08:00:00Z",
+    "source": "mock-news"
+  },
+  {
+    "id": "article-50",
+    "title": "Sample News Title 50",
+    "url": "https://example.com/article-50",
+    "content": "This is the body of sample news article number 50. It discusses topic sports and includes details for testing the RAG pipeline. Article id 50.",
+    "published_at": "2025-12-23T08:00:00Z",
+    "source": "mock-news"
+  }
+]

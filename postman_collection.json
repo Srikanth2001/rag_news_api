@@ -1,0 +1,83 @@
+{
+  "info": {
+    "name": "RAG News API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Ingest",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/ingest",
+          "host": [
+            "http://localhost:5000"
+          ],
+          "path": [
+            "ingest"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Chat",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"sessionId\": \"test\", \"query\": \"Tell me about economy news\"}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/chat",
+          "host": [
+            "http://localhost:5000"
+          ],
+          "path": [
+            "chat"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get History",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/history/test",
+          "host": [
+            "http://localhost:5000"
+          ],
+          "path": [
+            "history",
+            "test"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Delete History",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/history/test",
+          "host": [
+            "http://localhost:5000"
+          ],
+          "path": [
+            "history",
+            "test"
+          ]
+        }
+      }
+    }
+  ]
+}
