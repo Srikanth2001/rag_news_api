@@ -1,57 +1,158 @@
-# RAG News Intelligence API (Mock Implementation)
+RAG News Intelligence API
 
-This repository contains a complete backend implementation for the **Scalable RAG API for News Intelligence** assignment.
+This project implements a scalable Retrieval-Augmented Generation (RAG) backend designed for answering queries over a news corpus. The system supports ingestion of news articles, vector search, contextual answer generation, and structured logging.
 
-**What you'll find:**
-- Express-based Node.js API with endpoints:
-  - `POST /ingest` — ingests 50 mock news articles and stores embeddings into a local file-based vector store.
-  - `POST /chat` — accepts `{ sessionId, query }` and returns a contextual answer using retrieval + LLM stub.
-  - `GET /history/:sessionId` — fetches logged interactions.
-  - `DELETE /history/:sessionId` — clears session history.
+The design follows clean modular architecture principles with clear separation between controllers, services, utilities, and data layers.
 
-**Notes**
-- This is a **self-contained, runnable** mock version so you can test the API without requiring external APIs (Jina/Gemini/Qdrant).  
-- The code uses a deterministic local embedding function and a file-backed vector store (`data/vector_store.json`) implementing cosine similarity search.
-- For production, swap the vector store with Qdrant/Chroma and replace the LLM stub with Google Gemini/OpenAI, as described in the assignment README section.
+🚀 Features
+RAG Pipeline
 
-## Run locally (quick)
-1. Install Node.js >= 18
-2. Install dependencies:
-   ```
-   npm install
-   ```
-3. Start the server:
-   ```
-   npm start
-   ```
-4. API will run at `http://localhost:5000`.
+Ingests news articles from a JSON feed.
 
-## Run with Docker Compose (optional)
-This repository includes a `docker-compose.yml` with Postgres and Redis defined. Build & run:
-```
+Generates deterministic embeddings for each article.
+
+Stores them in a simple vector store (easily replaceable with Qdrant/Chroma in production).
+
+Retrieves the most relevant documents using cosine similarity.
+
+Generates contextual answers using a pluggable LLM service (mock LLM included; Gemini/OpenAI can be plugged in).
+
+API Endpoints
+Method	Endpoint	Description
+POST	/ingest	Ingests and indexes news articles
+POST	/chat	Answers a query using retrieval + generation
+GET	/history/:sessionId	Fetches logged interactions
+DELETE	/history/:sessionId	Clears session history
+🏗️ Tech Stack
+
+Node.js (Express)
+
+PostgreSQL / SQLite fallback
+
+Redis (or in-memory fallback)
+
+Docker & Docker Compose
+
+File-based Vector Store (mock)
+(Can be swapped with Qdrant/ChromaDB with minimal changes)
+
+📂 Project Structure
+rag_news_api/
+│── src/
+│   ├── controllers/
+│   ├── services/
+│   ├── routes/
+│   ├── utils/
+│   ├── app.js
+│   └── server.js
+│── data/
+│   ├── news.json
+│── Dockerfile
+│── docker-compose.yml
+│── package.json
+│── postman_collection.json
+│── README.md
+
+⚙️ Installation & Running Locally
+1️⃣ Install dependencies
+npm install
+
+2️⃣ Start server
+npm start
+
+
+Server runs at:
+http://localhost:5000
+
+🐳 Run Using Docker Compose
 docker-compose up --build
-```
-Note: The API will try to connect to Postgres/Redis if available; otherwise it falls back to a local SQLite database and in-memory cache.
 
-## Files of interest
-- `src/` — backend source code (controllers, services, simple vector store, SQL logging)
-- `data/news.json` — 50 mock news articles used for ingestion
-- `data/vector_store.json` — created after running `/ingest`
-- `postman_collection.json` — Postman collection for testing endpoints
 
-## How the mock RAG works
-1. `/ingest` reads `data/news.json`, calculates deterministic embeddings, and writes them to `data/vector_store.json`.
-2. `/chat` embeds the user query, finds top-k nearest articles by cosine similarity, constructs a context, and calls a **local LLM stub** that synthesizes an answer (no external API required).
-3. Interactions are logged to SQL (Postgres if configured, otherwise SQLite).
+This starts:
 
-## Deliverables to submit
-- This repository (zip included)
-- README explaining the architecture and how to swap to production components
-- Postman collection (included)
+Node.js API
 
-If you want, I can:
-- Replace the mock vector store with Qdrant client code (requires Qdrant running).
-- Replace the LLM stub with a Gemini integration (you’ll need to supply API key).
-- Add rate-limiting and a BullMQ ingestion queue (for bonus points).
+PostgreSQL
 
-Good luck! — Generated for the Edwid Tech Backend Assessment
+Redis
+
+(You can extend the compose file to include Qdrant for production setup.)
+
+🧪 Testing the API
+Ingest documents
+POST http://localhost:5000/ingest
+
+Ask a question
+POST http://localhost:5000/chat
+{
+  "sessionId": "demo-1",
+  "query": "Show me tech news"
+}
+
+Get history
+GET http://localhost:5000/history/demo-1
+
+📄 Postman Collection
+
+A Postman collection (postman_collection.json) is included in the project root.
+Import it into Postman to test all endpoints.
+
+📊 Logging
+
+All interactions are logged to:
+
+PostgreSQL if available
+
+SQLite fallback if not
+
+Each entry stores:
+
+sessionId
+
+user query
+
+model response
+
+response time
+
+timestamp
+
+🔧 Modularity & Extensibility
+
+This repository is designed to be easily extended:
+
+Replace vector embeddings
+
+Swap embedding.service.js with Jina, HuggingFace, or any embedding model.
+
+Replace vector store
+
+Replace /utils/vectorstore.js with:
+
+Qdrant client
+
+ChromaDB client
+
+Pinecone client
+
+Replace LLM
+
+Swap llm.stub.js with:
+
+Google Gemini
+
+OpenAI
+
+Groq
+
+or any provider
+
+📌 Notes
+
+The project includes a mock LLM for local testing without API keys.
+
+The architecture matches the assignment requirements for modularity, clean design, and containerized execution.
+
+📬 Contact
+
+If you need any help running the project, feel free to reach out.
